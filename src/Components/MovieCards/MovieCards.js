@@ -1,15 +1,18 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Button, Card } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+
 
 
 const MovieCards = ({movie}) => {
   return (
     <div>
         <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src={movie.posterUrl} />
+         <Link to='/des'>< Card.Img  variant="top" src={movie.posterUrl} /></Link>
   <Card.Body>
     <Card.Title>{movie.Title}</Card.Title>
     <Card.Text>{movie.description}</Card.Text>
+    <Button href={movie.trailer} target={"blanck"}>Trailer</Button>
   </Card.Body>
 </Card>
 

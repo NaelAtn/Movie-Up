@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>CheckPoinst Movie-up</h1> 
+       
       <FilterByName inputSearch={inputSearch} setInputSearch={setInputSearch}/>  
       <MovieList movies={movies} inputSearch={inputSearch}/>
       <AddMovie add={add}/>
